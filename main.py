@@ -6,7 +6,7 @@ import datetime
 
 
 # Apex
-APEX_KEY = "**********************************"
+APEX_KEY = "***********************************"
 APEX_URL = f"https://public-api.tracker.gg/v2/apex/standard/profile/"
 
 
