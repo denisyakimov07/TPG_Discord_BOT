@@ -4,10 +4,9 @@ import requests
 from discord.utils import get
 import datetime
 
-"""name  - epiz_27963539,  pass -o8vSQ3DjMGQ, host name - sql105.epizy.com, data_name - epiz_27963539_tpgdatabace,"""
 
 # Apex
-APEX_KEY = "cc301c53-f007-455e-b3da-0fdd828c6523"
+APEX_KEY = "**********************************"
 APEX_URL = f"https://public-api.tracker.gg/v2/apex/standard/profile/"
 
 
@@ -24,9 +23,9 @@ def get_apex_rank(name):
 
 # Discord
 CLIENT_ID = 786029312788791346
-PUBLIC_KEY = '5abb7a5d430e5158b68b6b217f4ac1bc0e5065c0a3093ccdad53ede613869390'
-TOKEN = "Nzg2MDI5MzEyNzg4NzkxMzQ2.X9Ac1w.wlpfZddyW7tHexUuAGHbWIvWjSE"
-CLIENT_SECRET = "nblp34-XOk8gO4vhOs4e4fxQYShoKYIi"
+PUBLIC_KEY = '**********************************'
+TOKEN = "**********************************"
+CLIENT_SECRET = "**********************************"
 APEX_ROLES = ['Bronze 1', 'Bronze 2', 'Bronze 3', 'Bronze 4', 'Silver 1', 'Silver 2', 'Silver 3', 'Silver 4', "Gold 1",
               "Gold 2", "Gold 3", "Gold 4"]
 
@@ -147,12 +146,6 @@ async def on_raw_reaction_add(payload):
                         "message_data": str(msg.content),
                     }
                     }
-        # print(f"member added reaction - {member}, id {user_id}")
-        # print(f"message_id - {message_id}")
-        # print(f"msg author - {msg.author}, id - {author.id}")
-        # print(f"channel_id - {channel_id}")
-        # print(f"reaction.count - {reaction.count} \n")
-        # print(f"Message - {msg.content} \n")
         embed = discord.Embed(colour=discord.Colour(0xe083b), description=str(data_log))
         await channel.send(embed=embed)
 

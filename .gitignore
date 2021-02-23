@@ -3,4 +3,4 @@ venv/
 /.idea/
 /.git
 /venv/
-/venv/
+venv/
